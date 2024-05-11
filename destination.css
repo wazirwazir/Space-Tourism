@@ -1,0 +1,290 @@
+body {
+    background-image: url('background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 90vh;
+}
+* {
+    color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-width: 70px;
+    margin-top: 3em;
+    padding: 20px 0 20px 10px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+nav ul {
+    padding: 0 1em;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin:0;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+}
+nav .rotater {
+    margin: 5px;
+    margin-right: auto;
+    
+}
+
+nav .rotated {
+    width: 48px;
+    height: 48px;
+    animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+nav span {
+    width: 35%;
+    height: 1px;
+    background-color: silver;
+    z-index: 1;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    height: 100px;
+    color: white;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+    animation: glow  2s ease-in-out infinite alternate;
+}
+nav .second {
+    border-bottom: 2px solid white;
+    color: rgb(226, 217, 167);
+    
+}
+nav button:hover, nav button:focus {
+    border-bottom: 2px solid white;
+    color: rgb(226, 217, 167);
+    text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+}
+h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    display: inline-block;
+    margin-left: 5%;
+}
+.wrapper {
+    padding: 0 20px;
+}
+.stars button {
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    width: 100%;
+}
+.stars {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5em;
+    width: 100%;
+} 
+.stars button:hover, .stars button:focus {
+    border-bottom: 2px solid white;
+}
+.info {
+    display: flex;
+    
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 1em;
+}
+.about p {
+    line-height: 1.5em;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.about h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 7em;
+}
+span {
+    color: rgba(255, 255, 255, 0.664);
+    margin-right: 0.6em;
+}
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+img {
+    width: 80%;
+    animation: star 1s ease-in forwards; 
+}
+@keyframes star {
+    from {
+        transform: scale(0);
+        
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.left {
+    justify-content: left;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Barlow Condensed", sans-serif;   
+}
+.distance {
+    display: flex;
+    flex-direction: column;
+}
+h3 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: lighter;
+}
+.time p {
+    margin: 0;
+    font-size: 2em;
+}
+.hide {
+    display: none;
+}
+.about {
+    animation: slide 1s ease-in-out both ;
+    
+  
+    
+}
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+        overflow: hidden;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        overflow: hidden;
+    }
+    
+}
+.tab {
+    display: none;
+}
+@media (max-width: 870px) {
+    nav ul {
+        flex-direction: column;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 3em;
+        gap: 2em;
+        animation: slide 1s ease-in-out forwards ;
+       }
+    nav button {
+        height: 40px;
+    }
+    nav span {
+        display: none;
+    }
+    nav button {
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-family: "Barlow Condensed", sans-serif;
+        padding-right: 10em;
+    }
+    nav button:hover, nav button:focus {
+        border-color: transparent;
+        border-right: 2px solid white;
+        color: rgb(226, 217, 167);
+        text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+    }
+    nav .first {
+        border-color: transparent;
+        border-right: 2px solid white;
+        color: rgb(226, 217, 167);
+        text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+    }
+    .hider {
+        display: none;
+    }
+    .note {
+        text-align: center;
+    }
+    .note h1 {
+        font-size: 3em;
+        display: block;
+        margin: auto;
+    }
+    .note p {
+        min-width: unset;
+        font-size: 1em;
+    }
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+        padding-bottom: 2.5em;
+    } 
+    .tab {
+        display: unset;
+       position: absolute;
+       top: 15px;
+       right: 15px;
+       border: none;
+       background: transparent;
+        padding: 10px 10px;
+        cursor: pointer;
+        z-index: 2;
+     }
+     @keyframes slide {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+    }
+}

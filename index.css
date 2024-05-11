@@ -1,0 +1,240 @@
+body {
+    background-image: url('background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    min-height: 90vh;
+}
+* {
+    color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    min-width: 70px;
+    margin-top: 3em;
+    padding: 20px 0 20px 10px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+nav ul {
+    padding: 0 1em;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin:0;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+}
+nav .rotater {
+    margin: 5px;
+    margin-right: auto;
+    
+}
+
+nav .rotated {
+    animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+nav span {
+    width: 35%;
+    height: 1px;
+    background-color: silver;
+    z-index: 1;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    height: 100px;
+    color: white;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+}
+nav button:hover, nav button:focus {
+    border-bottom: 2px solid white;
+    color: rgb(226, 217, 167);
+    text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+}
+nav .first {
+    border-bottom: 2px solid white;
+    color: rgb(226, 217, 167);
+    text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5em;
+}
+.note {
+    max-width: 40%;
+}
+.note .h2 {
+    margin: 5px;
+    font-weight: lighter;
+    display: inline-block;
+    width: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    transition: ease-in 2s ;
+}
+
+.note p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    min-width: 373px;
+    margin: 5px;
+    animation: slide 2s ease-in-out forwards;
+}
+@keyframes slide {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+.note h1 {
+    font-size: 9em;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+.explore {
+    display: flex;
+    align-items: flex-end;
+}
+.explore button {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: none;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    animation: star 1s ease-in forwards;
+    
+    
+}
+.explore button:hover {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.555);
+}
+.tab {
+    display: none;
+}
+@keyframes star {
+    from {
+        transform: scale(0);
+        
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@media (max-width: 870px) {
+    nav ul {
+        flex-direction: column;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 3em;
+        gap: 2em;
+        animation: slide 1s ease-in-out forwards ;
+       }
+    nav button {
+        height: 40px;
+    }
+    nav span {
+        display: none;
+    }
+    nav button {
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-family: "Barlow Condensed", sans-serif;
+        padding-right: 10em;
+    }
+    nav button:hover, nav button:focus {
+        border-color: transparent;
+        border-right: 2px solid white;
+        color: rgb(226, 217, 167);
+        text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+    }
+    nav .first {
+        border-color: transparent;
+        border-right: 2px solid white;
+        color: rgb(226, 217, 167);
+        text-shadow: 0 0 7px 5px rgb(230, 207, 77);
+    }
+    .hider {
+        display: none;
+    }
+    .note {
+        text-align: center;
+    }
+    .note h1 {
+        font-size: 3em;
+        display: block;
+        margin: auto;
+    }
+    .note p {
+        min-width: unset;
+        font-size: 1em;
+    }
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+        padding-bottom: 2.5em;
+    } 
+    .tab {
+        display: unset;
+       position: absolute;
+       top: 15px;
+       right: 15px;
+       border: none;
+       background: transparent;
+        padding: 10px 10px;
+        cursor: pointer;
+        z-index: 2;
+     }
+     @keyframes slide {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+    }
+}

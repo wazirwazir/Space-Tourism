@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="destination.css" id="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism Website</title>
+</head>
+<body>
+    <button class="tab"><svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg></button>
+    <nav>
+        <div class="rotater">
+<img class="rotated" src="https://space-tourism-website-one-tau.vercel.app/_next/static/media/logo.bc447a32.svg" alt="">
+        </div>
+        <span></span>
+        <ul>
+            <a href="index.html"><button class="first"><b>00</b> HOME</button></a>
+            <a href="#"><button class="second"><b>01</b> DESTINATION</button></a>
+            <a href="crew.html"><button class="third"><b>02</b> CREW</button></a>
+            <a href="technology.html"><button class="fourth"><b>03</b> TECHNOLOGY</button></a>
+        </ul>
+    </nav>
+    <main>
+        <div class="wrapper">
+            <h2><span>01</span> PICK YOUR DESTINATION</h2>
+            <div class="info">
+            <div class="left">
+                <img id="moonimage" class="one " src=".\destination\image-moon.png" alt="earth">
+                <img id="marsimage" class="two hide" src=".\destination\image-mars.png" alt="moon">
+                <img id="europaimage" class="three hide" src=".\destination\image-europa.png" alt="europa">
+                <img id="titanimage" class="four hide" src=".\destination\image-titan.png" alt="titan">
+            </div>
+            <div class="right" id="right">
+                <div class="stars">
+                    <button id="moonb">moon</button>
+                    <button id="marsb">mars</button>
+                    <button id="europab">europa</button>
+                    <button id="titanb">titan</button>
+                </div>
+                <div class="aboutwrap" id="aboutwrap">
+                <div class="about moon" id="moon">
+                <h1>MOON</h1>
+                <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                <hr>
+                <div class="time">
+                    <div class="distance">
+                        <p>AVG. DISTANCE</p>
+                        <h3>384, 400 KM</h3>
+                    </div>
+                    <div class="distance">
+                        <p>EST. TRAVEL TIME</p>
+                        <h3>3 DAYS</h3>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="about mars hide" id="mars">
+                    <h1>MARS</h1>
+                    <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+                    
+                    <div class="time">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h3>225 MIL.KM</h3>
+                        </div>
+                        <div class="distance">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>9 MONTHS</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="about europa hide" id="europa">
+                    <h1>EUROPA</h1>
+                    <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                    
+                    <div class="time">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h3>628 MIL.KM</h3>
+                        </div>
+                        <div class="distance">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>3 YEARS</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="about titan hide" id="titan">
+                    <h1>TITAN</h1>
+                    <p>The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+                    
+                    <div class="time">
+                        <div class="distance">
+                            <p>AVG. DISTANCE</p>
+                            <h3>1.6 BIL.KM</h3>
+                        </div>
+                        <div class="distance">
+                            <p>EST. TRAVEL TIME</p>
+                            <h3>7 YEARS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        </div>
+    </main>
+</body>
+<script src="its.js"></script>
+</html>
